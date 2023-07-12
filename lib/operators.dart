@@ -32,13 +32,18 @@ void main() {
   // } else {
   //   print("yonger");
 // }
-  int age = 23;
-  bool drinks = true;
-  if (age > 18) {
-    print("allowed1");
-  } else if (drinks) {
-    print("allowed2");
-  } else {
-    print("Nt allowed");
-  }
+  // int age = 23;
+  // bool drinks = true;
+  // if (age > 18) {
+  //   print("allowed1");
+  // } else if (drinks) {
+  //   print("allowed2");
+  // }
+
+  // var myList = [1, 2, 3, 4];
+  // List<String> myList2 = ["1", "2", "3", "4"];
+  // myList2.add("5");
+  // print(myList2);
+  // myList.removeAt(4);
+  // print(myList.length);
 }

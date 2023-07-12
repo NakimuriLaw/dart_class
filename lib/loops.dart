@@ -8,5 +8,4 @@ void main() {
     myNumbers.add(i);
     i = i + 1;
   }
-  print(myNumbers);
 }

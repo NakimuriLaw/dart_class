@@ -4,6 +4,7 @@ void main() {
   student['Course'] = "DIT";
   print(student);
 
+  // ignore: non_constant_identifier_names
   Map<String, String> StudentOne = {
     "name": "mata",
     "course": "BCS",
@@ -12,6 +13,7 @@ void main() {
   };
   print(StudentOne);
 
+  // ignore: non_constant_identifier_names
   Map<String, String> StudentTwo = {
     "name": "Agaba",
     "course": "BCM",
@@ -20,6 +22,7 @@ void main() {
   };
   print(StudentTwo);
 
+  // ignore: non_constant_identifier_names
   Map<String, String> StudentThree = {};
   StudentThree["name"] = "Daphne";
   StudentThree["course"] = "teaching";
@@ -32,13 +35,16 @@ void main() {
   print("studentTwo: $StudentTwo");
   print("studentThree: $student Three");
   // store student in a list
+  // ignore: non_constant_identifier_names
   List<Map<String, String>> Students = [];
   Students.add(StudentOne);
   // print(Students.length);
   Students.addAll([StudentTwo, StudentThree]);
   // print(Students.length);
 
+  // ignore: non_constant_identifier_names
   List<Map<String, String>> Males = [];
+  // ignore: non_constant_identifier_names
   List<Map<String, String>> Females = [];
   for (var student in Students) {
     if (student['gender'] == "Female") {

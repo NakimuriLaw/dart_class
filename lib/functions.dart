@@ -59,33 +59,33 @@ String getAnotherString(String X) {
 }
 
 void main() {
-  // print("who are you");
-  // String? name = stdin.readLineSync();
+  print("who are you");
+  String? name = stdin.readLineSync();
   // var name = stdin.readLineSync();
-  // print(name!.toUpperCase());
-  //  print("How old are you?");
-  // var age = stdin.readLineSync();
-  // print(age!.toUpperCase());
-  // myFunc();
-  // getUserName();
-  // print("");
-  // getUserName();
-  // print("");
-  // getUserName();
-  // print("");
-  // getUserName();
-  // print("");
-  // getUserName();
-  // getAge();
-  // print("my name is $globalName and i am $globalAge years old ");
-  // String myName = getName2();
-  // print(myName);
+  print(name!.toUpperCase());
+   print("How old are you?");
+  var age = stdin.readLineSync();
+  print(age!.toUpperCase());
+  myFunc();
+  getUserName();
+  print("");
+  getUserName();
+  print("");
+  getUserName();
+  print("");
+  getUserName();
+  print("");
+  getUserName();
+  getAge();
+  print("my name is $globalName and i am $globalAge years old ");
+  String myName = getName2();
+  print(myName);
   // String myName = getmyName();
-  // print("Your name is ${myName.toUpperCase()}");
-  // int myAge = getMyAge();
-  // print("my name is $myName and i am $myAge years older");
-  // print(getMyInt());
-  // print(getAnotherInt(2));
+  print("Your name is ${myName.toUpperCase()}");
+  int myAge = getMyAge();
+  print("my name is $myName and i am $myAge years older");
+  print(getMyInt());
+  print(getAnotherInt(2));
   print(getAnotherString("Violah"));
 
 }

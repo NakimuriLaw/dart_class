@@ -40,6 +40,24 @@ String getmyName() {
   return name ?? "";
 }
 
+int getMyAge() {
+  print("How old are you");
+  var age = stdin.readLineSync();
+  print("My Age is $age");
+  return int.parse(age ?? "0");
+}
+
+int getMyInt() {
+  return 0;
+}
+
+int getAnotherInt(int i) {
+  return i;
+}
+String getAnotherString(String X) {
+  return X;
+}
+
 void main() {
   // print("who are you");
   // String? name = stdin.readLineSync();
@@ -62,6 +80,12 @@ void main() {
   // print("my name is $globalName and i am $globalAge years old ");
   // String myName = getName2();
   // print(myName);
-  String myName = getmyName();
-  print("Your name is ${myName.toUpperCase()}");
+  // String myName = getmyName();
+  // print("Your name is ${myName.toUpperCase()}");
+  // int myAge = getMyAge();
+  // print("my name is $myName and i am $myAge years older");
+  // print(getMyInt());
+  // print(getAnotherInt(2));
+  print(getAnotherString("Violah"));
+
 }

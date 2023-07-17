@@ -10,7 +10,7 @@ String myGetSting() => "This is my sting";
 //   //calling our functiuon
 //   print(myUnivName());
 // }
-// today's topic 17.7.23
+/// today's topic 17.7.23
 // Parameters /arguments
 // they are inputs of the function
 // syntax of a function return_type fuctionName(parameters){body of the function}
@@ -19,18 +19,42 @@ String myGetSting() => "This is my sting";
 // funcName(arguments) runing or calling it.... these can be 11, or the real values
 
 //Example
-//function with one parameter
+///function with one parameter
 String getName(String name) {
   return name.length.toString();
 }
-//function with one parameter
+
+///function with two parameter// positional arguments
 String getNameAndAge(String name, int age) {
   return "Name is $name and Age is $age";
+}
+
+//Optinal arguments they are decleared in square brakets [].....
+String getGrade([String? score]) {
+//return score?? "No Score";
+  if (score != null) {
+    return score;
+  }
+  return "No Score";
+}
+
+///Get full name
+String getFullName(String fname, String lname, [String? mname]) {
+  if (mname != null) {
+    return "$fname $mname $lname";
+  }
+  return "$fname $lname";
 }
 
 void main() {
   //calling our functiuon
   //print("My University name is ${getName("bsu")} and am in Class 3");
   // print(getName("bsu"));
-  print(getNameAndAge("BSU", 23));
+  // print(getNameAndAge("BSU", 23));
+  // print(getGrade("12"));
+  // print(getGrade());
+  String fullName = getFullName("Lawrence", "Kawalya");
+  String fullname2 = getFullName("Lawrence", "Kawalya", "Bob");
+  print(fullName);
+  print(fullname2);
 }

@@ -46,6 +46,26 @@ String getFullName(String fname, String lname, [String? mname]) {
   return "$fname $lname";
 }
 
+///Named parameters
+void printMyName({required String name}) {
+  print(name);
+}
+
+///Assignment
+void printViozAge({required int age}) {
+  print(age);
+}
+
+///Both position and named parameters
+String myCarsName(String fcare, {required String scar}) {
+  return "$fcare and $scar";
+}
+
+///Optional named parameters
+void optionalNamedparameter({int? age}) {
+  print(age ?? "No Age Given");
+}
+
 void main() {
   //calling our functiuon
   //print("My University name is ${getName("bsu")} and am in Class 3");
@@ -53,8 +73,14 @@ void main() {
   // print(getNameAndAge("BSU", 23));
   // print(getGrade("12"));
   // print(getGrade());
-  String fullName = getFullName("Lawrence", "Kawalya");
-  String fullname2 = getFullName("Lawrence", "Kawalya", "Bob");
-  print(fullName);
-  print(fullname2);
+  // String fullName = getFullName("Lawrence", "Kawalya");
+  // String fullname2 = getFullName("Lawrence", "Kawalya", "Bob");
+  // print(fullName);
+  // print(fullname2);
+  // printMyName(name: "Vio");
+  // printViozAge(age: 23);
+  // String myCars = myCarsName("Benz", scar: "Subaru");
+  // print(myCars);
+  optionalNamedparameter();
+  optionalNamedparameter(age:89);
 }
